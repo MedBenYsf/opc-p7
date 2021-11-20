@@ -28,6 +28,7 @@ exports.createMessage = (req, res) => {
     content: content,
     attachment: myFile?.name ?? "",
     likes:0,
+    disLikes:0,
     userId: userId
   })
     .then((newPost) => {
